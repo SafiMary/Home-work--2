@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .block{
+        
+            font-family:'Comic Sans MS';
+            
+        }
+    </style>
+</head>
+<body>
+    <script src="scripts/index.js"></script>
+    
+    
+    <div id="box"></div>
+    <script>  
+
+var arrimage= ["https://gas-kvas.com/uploads/posts/2023-02/1675426451_gas-kvas-com-p-oboi-na-fonovii-risunok-rabochego-stola-11.jpg",
+"https://w.forfun.com/fetch/26/26cef760a1a8673a22f7efef9bddb32c.jpeg",
+"https://proprikol.ru/wp-content/uploads/2019/12/les-krasivye-kartinki-na-rabochij-stol-1.jpg",
+"https://gas-kvas.com/uploads/posts/2023-02/1675426451_gas-kvas-com-p-oboi-na-fonovii-risunok-rabochego-stola-11.jpg"];
+placeImages(arrimage);
+function placeImages(array){
+    var el = document.getElementById("box");
+    for (var i = 0; i < array.length; i++) {
+        el.innerHTML +=`<img src="${array[i]}" width=300px height=300px>`;
+}
+}
+
+    </script>
+    
+</body>
+</html>
